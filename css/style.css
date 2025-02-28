@@ -1,8 +1,8 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins"
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -25,5 +25,53 @@
   width: auto;
   height: auto;
   object-fit: cover; /* Ensures it covers the whole screen */
+}
+
+/* Ensures the header is positioned correctly */
+header {
+    position: fixed; /* Keeps the header fixed at the top */
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(36, 3, 46, 0.8); /* Dark background */
+    z-index: 1000; /* Keeps it on top of other elements */
+    padding: 15px 20px;
+}
+
+/* Flexbox for Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Styles for Menu */
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 2rem; /* Fixed spacing issue */
+}
+
+/* Style for Menu Items */
+nav ul li {
+    display: inline-block;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Style for Links */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    color: #c298cc; /* Change color on hover */
 }
 
