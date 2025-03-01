@@ -5,6 +5,7 @@
     font-family: "Poppins", sans-serif;
 }
 
+/*Home Page*/
 .container {
   position: fixed; 
   top: 0;
@@ -27,7 +28,7 @@
   object-fit: cover; 
 }
 
-/* Ensures the header is positioned correctly */
+
 header {
     position: fixed; 
     top: 0;
@@ -38,7 +39,7 @@ header {
     padding: 15px 20px;
 }
 
-/* Flexbox for Navigation */
+
 nav {
     display: flex;
     justify-content: center;
@@ -46,7 +47,7 @@ nav {
     padding: 10px 20px;
 }
 
-/* Styles for Menu */
+
 nav ul {
     display: flex;
     list-style: none;
@@ -54,14 +55,14 @@ nav ul {
     gap: 2rem; 
 }
 
-/* Style for Menu Items */
+
 nav ul li {
     display: inline-block;
     font-weight: 500;
     cursor: pointer;
 }
 
-/* Style for Links */
+
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -70,12 +71,12 @@ nav ul li a {
     transition: color 0.3s ease-in-out;
 }
 
-/* Hover Effect */
+
 nav ul li a:hover {
     color: #c298cc; 
 }
 
-/* Ensures the content is centered */
+
 .content {
     position: absolute;
     top: 50%; 
@@ -115,7 +116,7 @@ nav ul li a:hover {
     background-color: #c298cc; 
 }
 
-/* Image Style */
+/* About Page */
 .image {
     position: relative; 
     z-index: 1; 
@@ -134,13 +135,13 @@ nav ul li a:hover {
     transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
-    gap: 2rem; /* Space between image and content */
+    gap: 2rem; 
     max-width: 900px;
     width: 90%;
-    z-index: 1; /* Ensures it's above the video */
+    z-index: 1; 
 }
 
-/* About Content */
+
 .about-content {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -148,7 +149,7 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     text-align: left;
-    flex: 1; /* Takes remaining space */
+    flex: 1; 
 }
 
 .about-content h1, .about-content h2 {
@@ -162,7 +163,7 @@ nav ul li a:hover {
     padding-left: 20px;
 }
 
-/* Button Style */
+
 .about-content a {
     display: inline-block;
     margin-top: 15px;
@@ -179,7 +180,7 @@ nav ul li a:hover {
     background-color: #c298cc;
 }
 
-/* Responsive for Mobile */
+
 @media (max-width: 768px) {
     .about-wrapper {
         flex-direction: column;
@@ -191,4 +192,76 @@ nav ul li a:hover {
         text-align: center;
     }
 
+
     
+
+/*contact page*/
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    z-index: 1; 
+}
+
+
+form label {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #762d88;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #ddd;
+}
+
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #762d88;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #c298cc;
+}
+
+
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+}
+   
